@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "reports": 59,
+  "charting_cells": 472,
+  "component_assessments": 472,
+  "risk_analysis_reports": 54,
+  "retained_matrix_cells_recomputed": 405,
+  "interpretation": "Descriptive report-level presence and linked evidence; no student-level effect or causal efficacy estimate."
+}

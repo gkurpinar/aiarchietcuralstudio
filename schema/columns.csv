@@ -1,0 +1,268 @@
+﻿table,column,description
+analysis/benefit_risk_matrix.csv,benefit_key,Benefit key. See table grain and joins in README.
+analysis/benefit_risk_matrix.csv,benefit_label,Benefit label. See table grain and joins in README.
+analysis/benefit_risk_matrix.csv,risk_key,Risk key. See table grain and joins in README.
+analysis/benefit_risk_matrix.csv,risk_label,Risk label. See table grain and joins in README.
+analysis/benefit_risk_matrix.csv,eligible_N,"Number of reports eligible for this comparison, not a participant count."
+analysis/benefit_risk_matrix.csv,eligible_report_ids,Eligible report ids. See table grain and joins in README.
+analysis/benefit_risk_matrix.csv,x_n,X n. See table grain and joins in README.
+analysis/benefit_risk_matrix.csv,x_report_ids,X report ids. See table grain and joins in README.
+analysis/benefit_risk_matrix.csv,y_n,Y n. See table grain and joins in README.
+analysis/benefit_risk_matrix.csv,y_report_ids,Y report ids. See table grain and joins in README.
+analysis/benefit_risk_matrix.csv,joint_n,Number of distinct eligible reports containing both indicators.
+analysis/benefit_risk_matrix.csv,joint_report_ids,JSON list of the report IDs counted in joint_n.
+analysis/benefit_risk_matrix.csv,percent_y_given_x,100 × joint_n / x_n; report-level conditional reporting frequency.
+analysis/benefit_risk_matrix.csv,percent_x_given_y,100 × joint_n / y_n; report-level conditional reporting frequency.
+analysis/benefit_risk_matrix.csv,joint_percent_eligible,Joint percent eligible. See table grain and joins in README.
+analysis/benefit_risk_matrix.csv,lift,"joint_n × eligible_N / (x_n × y_n). Descriptive association, not efficacy or causal effect."
+analysis/benefit_risk_matrix.csv,x_only_report_ids,X only report ids. See table grain and joins in README.
+analysis/benefit_risk_matrix.csv,y_only_report_ids,Y only report ids. See table grain and joins in README.
+analysis/benefit_risk_matrix.csv,neither_coded_report_ids,Neither coded report ids. See table grain and joins in README.
+analysis/prespecified_triples.csv,benefit,Benefit. See table grain and joins in README.
+analysis/prespecified_triples.csv,risk,Risk. See table grain and joins in README.
+analysis/prespecified_triples.csv,component,Component. See table grain and joins in README.
+analysis/prespecified_triples.csv,eligible_N,"Number of reports eligible for this comparison, not a participant count."
+analysis/prespecified_triples.csv,eligible_report_ids,Eligible report ids. See table grain and joins in README.
+analysis/prespecified_triples.csv,joint_n,Number of distinct eligible reports containing both indicators.
+analysis/prespecified_triples.csv,joint_report_ids,JSON list of the report IDs counted in joint_n.
+analysis/prespecified_triples.csv,benefit_risk_pair_n,Benefit risk pair n. See table grain and joins in README.
+analysis/prespecified_triples.csv,benefit_risk_pair_report_ids,Benefit risk pair report ids. See table grain and joins in README.
+analysis/prespecified_triples.csv,percent_component_given_benefit_risk,Percent component given benefit risk. See table grain and joins in README.
+analysis/prespecified_triples.csv,passes_display_threshold,Passes display threshold. See table grain and joins in README.
+analysis/prespecified_triples.csv,display_rule,Display rule. See table grain and joins in README.
+analysis/prespecified_triples.csv,omission_reason,Omission reason. See table grain and joins in README.
+analysis/reproduced/activity_component.csv,activity_key,Activity key. See the table description in README and search/README.
+analysis/reproduced/activity_component.csv,activity_label,Activity label. See the table description in README and search/README.
+analysis/reproduced/activity_component.csv,component_id,Component id. See table grain and joins in README.
+analysis/reproduced/activity_component.csv,activity_reports_n,Number of reports assigned this design-stage/activity category.
+analysis/reproduced/activity_component.csv,joint_n,Number of distinct eligible reports containing both indicators.
+analysis/reproduced/activity_component.csv,percent_of_activity_reports,100 times joint_n divided by activity_reports_n.
+analysis/reproduced/activity_component.csv,joint_report_ids,JSON list of the report IDs counted in joint_n.
+analysis/reproduced/charting_summary.csv,manuscript_field_code,CH1–CH8 in the current manuscript. CH013 is displayed as CH8; its older display code was CH9.
+analysis/reproduced/charting_summary.csv,source_field_id,Stable internal field identifier. Join schema/charting_fields.csv for current manuscript numbering.
+analysis/reproduced/charting_summary.csv,category_key,Stable category code. PREMATURE_PRODUCTIZATION is the legacy key for Premature finalization.
+analysis/reproduced/charting_summary.csv,category_label,Category label. See table grain and joins in README.
+analysis/reproduced/charting_summary.csv,report_count,"Number of distinct included reports, not participants."
+analysis/reproduced/charting_summary.csv,corpus_denominator,"Total number of included report publications, 59."
+analysis/reproduced/charting_summary.csv,percent_of_reports,Percent of reports. See the table description in README and search/README.
+analysis/reproduced/charting_summary.csv,report_ids,Report ids. See table grain and joins in README.
+analysis/reproduced/component_evidence_counts.csv,evidence_type,Evidence type. See the table description in README and search/README.
+analysis/reproduced/component_evidence_counts.csv,component_cells_n,Number of report-component assessments carrying this evidence type. A report may contribute more than one cell.
+analysis/reproduced/component_evidence_counts.csv,distinct_reports_n,Number of unique report IDs carrying this evidence type across any components.
+analysis/reproduced/component_evidence_counts.csv,report_denominator,"Total number of included report publications, 59."
+analysis/reproduced/component_evidence_counts.csv,report_percent,100 times distinct_reports_n divided by report_denominator.
+analysis/reproduced/component_evidence_counts.csv,report_ids,Report ids. See table grain and joins in README.
+analysis/reproduced/component_evidence_counts.csv,note,Note. See the table description in README and search/README.
+analysis/reproduced/component_pairs.csv,component_a,Component a. See the table description in README and search/README.
+analysis/reproduced/component_pairs.csv,component_b,Component b. See the table description in README and search/README.
+analysis/reproduced/component_pairs.csv,a_n,Number of distinct reports in the named category; see the table denominator.
+analysis/reproduced/component_pairs.csv,b_n,Number of distinct reports in the named category; see the table denominator.
+analysis/reproduced/component_pairs.csv,joint_n,Number of distinct eligible reports containing both indicators.
+analysis/reproduced/component_pairs.csv,corpus_denominator,"Total number of included report publications, 59."
+analysis/reproduced/component_pairs.csv,joint_percent,"Report percentage in the named category, using the stated denominator."
+analysis/reproduced/component_pairs.csv,jaccard,Intersection divided by union of report sets using the two components.
+analysis/reproduced/component_pairs.csv,joint_report_ids,JSON list of the report IDs counted in joint_n.
+analysis/reproduced/component_summary.csv,component_id,Component id. See table grain and joins in README.
+analysis/reproduced/component_summary.csv,component_name,Component name. See table grain and joins in README.
+analysis/reproduced/component_summary.csv,total_reports,Total reports. See the table description in README and search/README.
+analysis/reproduced/component_summary.csv,implemented_n,Number of distinct reports in either implemented component status.
+analysis/reproduced/component_summary.csv,implemented_percent,100 times implemented_n divided by total_reports.
+analysis/reproduced/component_summary.csv,implemented_with_benefit_n,Number of distinct reports in the named category; see the table denominator.
+analysis/reproduced/component_summary.csv,implemented_with_benefit_percent,"Report percentage in the named category, using the stated denominator."
+analysis/reproduced/component_summary.csv,implemented_without_benefit_n,Number of distinct reports in the named category; see the table denominator.
+analysis/reproduced/component_summary.csv,implemented_without_benefit_percent,"Report percentage in the named category, using the stated denominator."
+analysis/reproduced/component_summary.csv,recommended_only_n,Number of distinct reports in the named category; see the table denominator.
+analysis/reproduced/component_summary.csv,recommended_only_percent,"Report percentage in the named category, using the stated denominator."
+analysis/reproduced/component_summary.csv,not_identified_n,Number of distinct reports in the named category; see the table denominator.
+analysis/reproduced/component_summary.csv,not_identified_percent,"Report percentage in the named category, using the stated denominator."
+analysis/reproduced/component_summary.csv,positive_n,Number of distinct reports in the named category; see the table denominator.
+analysis/reproduced/component_summary.csv,positive_percent,"Report percentage in the named category, using the stated denominator."
+analysis/reproduced/component_summary.csv,mixed_n,Number of distinct reports in the named category; see the table denominator.
+analysis/reproduced/component_summary.csv,mixed_percent,"Report percentage in the named category, using the stated denominator."
+analysis/reproduced/component_summary.csv,negative_n,Number of distinct reports in the named category; see the table denominator.
+analysis/reproduced/component_summary.csv,negative_percent,"Report percentage in the named category, using the stated denominator."
+analysis/reproduced/component_summary.csv,null_n,Number of distinct reports in the named category; see the table denominator.
+analysis/reproduced/component_summary.csv,null_percent,"Report percentage in the named category, using the stated denominator."
+analysis/reproduced/component_summary.csv,not_evaluated_n,Number of distinct reports in the named category; see the table denominator.
+analysis/reproduced/component_summary.csv,not_evaluated_percent,"Report percentage in the named category, using the stated denominator."
+analysis/reproduced/field_coverage.csv,manuscript_field_code,CH1–CH8 in the current manuscript. CH013 is displayed as CH8; its older display code was CH9.
+analysis/reproduced/field_coverage.csv,field_name,Field name. See table grain and joins in README.
+analysis/reproduced/field_coverage.csv,reports_with_substantive_entries,Reports with at least one substantive category in the field; sentinel-only values are excluded.
+analysis/reproduced/field_coverage.csv,total_reports,Total reports. See the table description in README and search/README.
+analysis/reproduced/field_coverage.csv,percent_of_reports,Percent of reports. See the table description in README and search/README.
+analysis/reproduced/report_years.csv,year,Publication year used in the frozen analysis.
+analysis/reproduced/report_years.csv,report_count,"Number of distinct included reports, not participants."
+analysis/reproduced/report_years.csv,percent_of_reports,Percent of reports. See the table description in README and search/README.
+analysis/risk_component_breakdowns.csv,risk_key,Risk key. See table grain and joins in README.
+analysis/risk_component_breakdowns.csv,component_id,Component id. See table grain and joins in README.
+analysis/risk_component_breakdowns.csv,breakdown,Breakdown. See table grain and joins in README.
+analysis/risk_component_breakdowns.csv,category,Category. See table grain and joins in README.
+analysis/risk_component_breakdowns.csv,report_count,Report count. See table grain and joins in README.
+analysis/risk_component_breakdowns.csv,risk_denominator,Risk denominator. See table grain and joins in README.
+analysis/risk_component_breakdowns.csv,percent_of_risk_reports,Percent of risk reports. See table grain and joins in README.
+analysis/risk_component_breakdowns.csv,report_ids,Report ids. See table grain and joins in README.
+analysis/risk_component_breakdowns.csv,risk_report_ids,Risk report ids. See table grain and joins in README.
+analysis/risk_component_breakdowns.csv,interpretation,Interpretation. See table grain and joins in README.
+analysis/risk_component_matrix.csv,risk_key,Risk key. See table grain and joins in README.
+analysis/risk_component_matrix.csv,risk_label,Risk label. See table grain and joins in README.
+analysis/risk_component_matrix.csv,component_id,Component id. See table grain and joins in README.
+analysis/risk_component_matrix.csv,eligible_N,"Number of reports eligible for this comparison, not a participant count."
+analysis/risk_component_matrix.csv,eligible_report_ids,Eligible report ids. See table grain and joins in README.
+analysis/risk_component_matrix.csv,x_n,X n. See table grain and joins in README.
+analysis/risk_component_matrix.csv,x_report_ids,X report ids. See table grain and joins in README.
+analysis/risk_component_matrix.csv,y_n,Y n. See table grain and joins in README.
+analysis/risk_component_matrix.csv,y_report_ids,Y report ids. See table grain and joins in README.
+analysis/risk_component_matrix.csv,joint_n,Number of distinct eligible reports containing both indicators.
+analysis/risk_component_matrix.csv,joint_report_ids,JSON list of the report IDs counted in joint_n.
+analysis/risk_component_matrix.csv,percent_y_given_x,100 × joint_n / x_n; report-level conditional reporting frequency.
+analysis/risk_component_matrix.csv,percent_x_given_y,100 × joint_n / y_n; report-level conditional reporting frequency.
+analysis/risk_component_matrix.csv,joint_percent_eligible,Joint percent eligible. See table grain and joins in README.
+analysis/risk_component_matrix.csv,lift,"joint_n × eligible_N / (x_n × y_n). Descriptive association, not efficacy or causal effect."
+analysis/risk_component_matrix.csv,x_only_report_ids,X only report ids. See table grain and joins in README.
+analysis/risk_component_matrix.csv,y_only_report_ids,Y only report ids. See table grain and joins in README.
+analysis/risk_component_matrix.csv,neither_coded_report_ids,Neither coded report ids. See table grain and joins in README.
+analysis/risk_component_matrix.csv,component_status_counts,Component status counts. See table grain and joins in README.
+analysis/risk_component_matrix.csv,component_status_report_ids,Component status report ids. See table grain and joins in README.
+analysis/risk_component_matrix.csv,implemented_valence_report_ids,Implemented valence report ids. See table grain and joins in README.
+analysis/risk_component_matrix.csv,component_benefit_evidence_type_report_ids,Component benefit evidence type report ids. See table grain and joins in README.
+data/charting_assignments.csv,cell_id,Cell id. See table grain and joins in README.
+data/charting_assignments.csv,report_id,"Stable publication identifier. The counting unit is a report, not a student or independent cohort."
+data/charting_assignments.csv,source_field_id,Stable internal field identifier. Join schema/charting_fields.csv for current manuscript numbering.
+data/charting_assignments.csv,manuscript_field_code,CH1–CH8 in the current manuscript. CH013 is displayed as CH8; its older display code was CH9.
+data/charting_assignments.csv,category_key,Stable category code. PREMATURE_PRODUCTIZATION is the legacy key for Premature finalization.
+data/charting_assignments.csv,category_label,Category label. See table grain and joins in README.
+data/charting_assignments.csv,is_substantive,"True for an analytical category, false for a missingness/reporting sentinel."
+data/charting_assignments.csv,stored_weight,"Historical stored value, not an effect size, count weight or confidence score. Analyses use unique report membership."
+data/charting_assignments.csv,proposal_id,Stable analytical-record identifier joining assessments and source locations.
+data/charting_cells.csv,cell_id,Cell id. See table grain and joins in README.
+data/charting_cells.csv,report_id,"Stable publication identifier. The counting unit is a report, not a student or independent cohort."
+data/charting_cells.csv,source_field_id,Stable internal field identifier. Join schema/charting_fields.csv for current manuscript numbering.
+data/charting_cells.csv,manuscript_field_code,CH1–CH8 in the current manuscript. CH013 is displayed as CH8; its older display code was CH9.
+data/charting_cells.csv,field_name,Field name. See table grain and joins in README.
+data/charting_cells.csv,frozen_is_missing,Saved missingness flag. Preserve it separately from observed sentinel and substantive values.
+data/charting_cells.csv,recording_status,"substantive_recorded, sentinel_only, or no_recorded_value. None establishes actual absence of a phenomenon."
+data/charting_cells.csv,substantive_category_count,Substantive category count. See table grain and joins in README.
+data/charting_cells.csv,sentinel_keys,"JSON list of saved reporting markers. NOT_CHARTED is unknown/unmapped, not confirmed source silence."
+data/charting_cells.csv,mixed_sentinel_and_substantive,True where a reporting marker coexists with substantive values. Substantive categories are retained.
+data/charting_cells.csv,proposal_ids,Proposal ids. See table grain and joins in README.
+data/charting_wide.csv,report_id,"Stable publication identifier. The counting unit is a report, not a student or independent cohort."
+data/charting_wide.csv,citation_label,Author-year label used in the current manuscript.
+data/charting_wide.csv,CH1 AI tool,Ch1 ai tool. See table grain and joins in README.
+data/charting_wide.csv,CH2 Design stage,Ch2 design stage. See table grain and joins in README.
+data/charting_wide.csv,CH3 Output type,Ch3 output type. See table grain and joins in README.
+data/charting_wide.csv,CH4 Claimed benefit,Ch4 claimed benefit. See table grain and joins in README.
+data/charting_wide.csv,CH5 Claimed risk,Ch5 claimed risk. See table grain and joins in README.
+data/charting_wide.csv,CH6 Student role,Ch6 student role. See table grain and joins in README.
+data/charting_wide.csv,CH7 Instructor role,Ch7 instructor role. See table grain and joins in README.
+data/charting_wide.csv,CH8 AI modality,Ch8 ai modality. See table grain and joins in README.
+data/claim_evidence_metadata.csv,report_id,"Stable publication identifier. The counting unit is a report, not a student or independent cohort."
+data/claim_evidence_metadata.csv,source_field_id,Stable internal field identifier. Join schema/charting_fields.csv for current manuscript numbering.
+data/claim_evidence_metadata.csv,category_key,Stable category code. PREMATURE_PRODUCTIZATION is the legacy key for Premature finalization.
+data/claim_evidence_metadata.csv,claim_evidence_class,Claim-level epistemic classification when recorded; whole-paper methods or quote matching do not substitute.
+data/claim_evidence_metadata.csv,classification_reason,Classification reason. See table grain and joins in README.
+data/claim_evidence_metadata.csv,proposal_id,Stable analytical-record identifier joining assessments and source locations.
+data/claim_evidence_metadata.csv,specific_claim_audit,Specific claim audit. See table grain and joins in README.
+data/component_assessments.csv,report_id,"Stable publication identifier. The counting unit is a report, not a student or independent cohort."
+data/component_assessments.csv,component_id,Component id. See table grain and joins in README.
+data/component_assessments.csv,component_name,Component name. See table grain and joins in README.
+data/component_assessments.csv,status,"implemented_with_benefit, implemented_without_benefit, recommended_only, or not_identified. See README."
+data/component_assessments.csv,implemented,"True for either implemented status; this is report-level description, not efficacy."
+data/component_assessments.csv,outcome_valence,"positive, mixed, negative, null, or not_evaluated. These are recorded component-specific outcomes."
+data/component_assessments.csv,benefit_evidence_types,JSON list of component-specific evidence types. Categories overlap; cell and unique-report counts differ.
+data/component_assessments.csv,benefit_domains,JSON list of consequence domains associated with the component.
+data/component_assessments.csv,benefit_finding,"Existing analytical summary of a linked favorable consequence, not a verbatim source passage."
+data/component_assessments.csv,analytical_rationale,"Existing reviewer/AI analytical explanation, exported without changing classification."
+data/component_assessments.csv,limitations,Existing limits on interpreting the component evidence.
+data/component_assessments.csv,boundary_note,Existing explanation of the component inclusion boundary.
+data/component_assessments.csv,source_locators,JSON list of source page/location descriptions.
+data/component_assessments.csv,proposal_id,Stable analytical-record identifier joining assessments and source locations.
+data/components_wide.csv,report_id,"Stable publication identifier. The counting unit is a report, not a student or independent cohort."
+data/components_wide.csv,citation_label,Author-year label used in the current manuscript.
+data/components_wide.csv,C1,Human-readable component status; exact component rules are in schema/components.csv.
+data/components_wide.csv,C2,Human-readable component status; exact component rules are in schema/components.csv.
+data/components_wide.csv,C3,Human-readable component status; exact component rules are in schema/components.csv.
+data/components_wide.csv,C4,Human-readable component status; exact component rules are in schema/components.csv.
+data/components_wide.csv,C5,Human-readable component status; exact component rules are in schema/components.csv.
+data/components_wide.csv,C6,Human-readable component status; exact component rules are in schema/components.csv.
+data/components_wide.csv,C7,Human-readable component status; exact component rules are in schema/components.csv.
+data/components_wide.csv,C8,Human-readable component status; exact component rules are in schema/components.csv.
+data/report_analysis_membership.csv,report_id,"Stable publication identifier. The counting unit is a report, not a student or independent cohort."
+data/report_analysis_membership.csv,benefit_field_eligible,Frozen complete-field membership used for benefit-risk analyses.
+data/report_analysis_membership.csv,risk_field_eligible,Frozen complete-field membership used for risk analyses. 54 of 59 reports qualify.
+data/report_analysis_membership.csv,risk_field_conflict,Risk field conflict. See table grain and joins in README.
+data/report_analysis_membership.csv,first_author_group,First author group. See table grain and joins in README.
+data/reports.csv,report_id,"Stable publication identifier. The counting unit is a report, not a student or independent cohort."
+data/reports.csv,citation_label,Author-year label used in the current manuscript.
+data/reports.csv,year,Publication year used in the frozen analysis.
+data/reports.csv,title,Title. See table grain and joins in README.
+data/reports.csv,doi,"Current manuscript DOI, without URL prefix. Blank means no confirmed current DOI in this export."
+data/reports.csv,public_url,Unauthenticated public DOI/publisher/preprint link from the current bibliography.
+data/reports.csv,citation,Citation. See table grain and joins in README.
+data/reports.csv,discovery_group,Discovery group. See table grain and joins in README.
+data/reports.csv,primary_pdf_source_id,Primary pdf source id. See table grain and joins in README.
+data/reports.csv,primary_text_source_id,Primary text source id. See table grain and joins in README.
+data/reports.csv,metadata_note,Metadata note. See table grain and joins in README.
+data/source_locations.csv,location_id,Location id. See table grain and joins in README.
+data/source_locations.csv,proposal_id,Stable analytical-record identifier joining assessments and source locations.
+data/source_locations.csv,report_id,"Stable publication identifier. The counting unit is a report, not a student or independent cohort."
+data/source_locations.csv,source_field_id,Stable internal field identifier. Join schema/charting_fields.csv for current manuscript numbering.
+data/source_locations.csv,source_id,Stable preserved-source identifier joining sources.csv. Source files are not redistributed.
+data/source_locations.csv,pdf_source_id,Related preserved PDF identifier if available.
+data/source_locations.csv,locator,Locator. See table grain and joins in README.
+data/source_locations.csv,pdf_page,Pdf page. See table grain and joins in README.
+data/source_locations.csv,page,Page. See table grain and joins in README.
+data/source_locations.csv,printed_page,Printed page. See table grain and joins in README.
+data/source_locations.csv,text_start_line,Text start line. See table grain and joins in README.
+data/source_locations.csv,text_end_line,Text end line. See table grain and joins in README.
+data/source_locations.csv,start_offset,Start offset. See table grain and joins in README.
+data/source_locations.csv,end_offset,End offset. See table grain and joins in README.
+data/source_locations.csv,source_sha256,"Hash of the preserved source used for this evidence pointer, when recorded."
+data/sources.csv,source_id,Stable preserved-source identifier joining sources.csv. Source files are not redistributed.
+data/sources.csv,report_id,"Stable publication identifier. The counting unit is a report, not a student or independent cohort."
+data/sources.csv,source_type,Source type. See table grain and joins in README.
+data/sources.csv,source_title,Source title. See table grain and joins in README.
+data/sources.csv,sha256,Sha256. See table grain and joins in README.
+data/sources.csv,hash_verified,Hash verified. See table grain and joins in README.
+data/sources.csv,pages,Pages. See table grain and joins in README.
+data/sources.csv,associated_pdf_source_id,Associated pdf source id. See table grain and joins in README.
+schema/categories.csv,source_field_id,Stable internal field identifier. Join schema/charting_fields.csv for current manuscript numbering.
+schema/categories.csv,manuscript_field_code,CH1–CH8 in the current manuscript. CH013 is displayed as CH8; its older display code was CH9.
+schema/categories.csv,category_key,Stable category code. PREMATURE_PRODUCTIZATION is the legacy key for Premature finalization.
+schema/categories.csv,category_label,Category label. See table grain and joins in README.
+schema/categories.csv,is_sentinel,Is sentinel. See table grain and joins in README.
+schema/categories.csv,legacy_note,Legacy note. See table grain and joins in README.
+schema/charting_fields.csv,source_field_id,Stable internal field identifier. Join schema/charting_fields.csv for current manuscript numbering.
+schema/charting_fields.csv,manuscript_field_code,CH1–CH8 in the current manuscript. CH013 is displayed as CH8; its older display code was CH9.
+schema/charting_fields.csv,field_key,Field key. See table grain and joins in README.
+schema/charting_fields.csv,field_name,Field name. See table grain and joins in README.
+schema/charting_fields.csv,definition,Definition. See table grain and joins in README.
+schema/charting_fields.csv,previous_display_code,Previous display code. See table grain and joins in README.
+schema/components.csv,component_id,Component id. See table grain and joins in README.
+schema/components.csv,component_name,Component name. See table grain and joins in README.
+schema/components.csv,qualifying_activity,Qualifying activity. See table grain and joins in README.
+search/search_queries.csv,search_event_id,Search event id. See the table description in README and search/README.
+search/search_queries.csv,flow_route,Flow route. See the table description in README and search/README.
+search/search_queries.csv,database,Database. See the table description in README and search/README.
+search/search_queries.csv,query_name,Query name. See the table description in README and search/README.
+search/search_queries.csv,search_date,Search date. See the table description in README and search/README.
+search/search_queries.csv,date_basis,Date basis. See the table description in README and search/README.
+search/search_queries.csv,receipt_recorded_at_utc,Receipt recorded at utc. See the table description in README and search/README.
+search/search_queries.csv,import_timestamp_as_recorded,Import timestamp as recorded. See the table description in README and search/README.
+search/search_queries.csv,query_attribution,Query attribution. See the table description in README and search/README.
+search/search_queries.csv,result_record_occurrences,Result record occurrences. See the table description in README and search/README.
+search/search_queries.csv,query_text,Query text. See the table description in README and search/README.
+search/search_queries.csv,query_text_sha256_utf8,Query text sha256 utf8. See the table description in README and search/README.
+search/search_queries.csv,query_source_id,Query source id. See the table description in README and search/README.
+search/search_queries.csv,query_source_sha256,Query source sha256. See the table description in README and search/README.
+search/search_queries.csv,export_sha256,Export sha256. See the table description in README and search/README.
+search/search_queries.csv,notes,Notes. See the table description in README and search/README.
+search/selection_flow.csv,measure_id,Measure id. See the table description in README and search/README.
+search/selection_flow.csv,route,Route. See the table description in README and search/README.
+search/selection_flow.csv,stage,Stage. See the table description in README and search/README.
+search/selection_flow.csv,measure,Measure. See the table description in README and search/README.
+search/selection_flow.csv,count,Count. See the table description in README and search/README.
+search/selection_flow.csv,unit,Unit. See the table description in README and search/README.
+search/selection_flow.csv,reference_population_id,Reference population id. See the table description in README and search/README.
+search/selection_flow.csv,source_id,Stable preserved-source identifier joining sources.csv. Source files are not redistributed.
+search/selection_flow.csv,source_locator,Source locator. See the table description in README and search/README.
+search/selection_flow.csv,notes,Notes. See the table description in README and search/README.

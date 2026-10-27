@@ -1,0 +1,37 @@
+measure_id,route,stage,measure,count,unit,reference_population_id,source_id,source_locator,notes
+L01,Scopus and supplementary records,Identification,Documented records,242,record occurrences,,figure1_rev19_receipt,/numeric_inputs/left/documented,Incomplete overall identification yield: 21 supplementary records are retained subsets.
+L02,Scopus and supplementary records,Identification,Scopus records,221,record occurrences,L01,figure1_rev19_receipt,/numeric_inputs/left/scopus,91 + 61 + 69 retained export rows; repeated occurrences are included.
+L03,Scopus and supplementary records,Identification,Supplementary records,21,record occurrences,L01,figure1_rev19_receipt,/numeric_inputs/left/supplementary,Included-subset imports of 12 and 9; complete identified yields are unknown.
+L04,Scopus and supplementary records,Identification,Duplicates removed,61,duplicate record occurrences,L01,figure1_rev19_receipt,/numeric_inputs/left/duplicates,Confirmed duplicates removed from the documented earlier records.
+L05,Scopus and supplementary records,Screening,Records screened,181,unique records,L01,figure1_rev19_receipt,/numeric_inputs/left/screened,242 documented occurrences minus 61 duplicates.
+L06,Scopus and supplementary records,Screening,Records excluded,89,unique records,L05,figure1_rev19_receipt,/numeric_inputs/left/excluded,Title/abstract exclusions.
+L07,Scopus and supplementary records,Retrieval,Reports sought,92,reports,L05,figure1_rev19_receipt,/numeric_inputs/left/sought,Reports advanced from the earlier title/abstract screening.
+L08,Scopus and supplementary records,Retrieval,Reports not retrieved,7,reports,L07,figure1_rev19_receipt,/numeric_inputs/left/not_retrieved,Not assessed in full text.
+L09,Scopus and supplementary records,Eligibility,Full texts assessed,85,reports,L07,figure1_rev19_receipt,/numeric_inputs/left/assessed,Retrieved full-text reports.
+L10,Scopus and supplementary records,Eligibility,Full-text exclusions,38,reports,L09,figure1_rev19_receipt,/numeric_inputs/left/fulltext_exclusions,Four stated reason categories sum to this total.
+L11,Scopus and supplementary records,Eligibility exclusion reason,No architectural studio context,24,reports,L10,figure1_rev19_receipt,/numeric_inputs/left/exclusion_categories/0,Reason count among the 38 full-text exclusions.
+L12,Scopus and supplementary records,Eligibility exclusion reason,Architecture evidence inseparable,11,reports,L10,figure1_rev19_receipt,/numeric_inputs/left/exclusion_categories/1,Reason count among the 38 full-text exclusions.
+L13,Scopus and supplementary records,Eligibility exclusion reason,No pedagogical relevance,2,reports,L10,figure1_rev19_receipt,/numeric_inputs/left/exclusion_categories/2,Reason count among the 38 full-text exclusions.
+L14,Scopus and supplementary records,Eligibility exclusion reason,Generative AI not established,1,reports,L10,figure1_rev19_receipt,/numeric_inputs/left/exclusion_categories/3,Reason count among the 38 full-text exclusions.
+L15,Scopus and supplementary records,Eligibility,Reports retained,47,reports,L09,figure1_rev19_receipt,/numeric_inputs/left/retained,Before addition of two previously logged supplementary reports and student-data scope reassessment.
+L16,Scopus and supplementary records,Supplementary reconciliation,Additional supplementary reports,2,reports,,figure1_rev19_receipt,/numeric_inputs/left/additional_supplementary,Two previously logged reports assessed and retained; no separate title/abstract or sought stage is inferred.
+L17,Scopus and supplementary records,Scope review,Reports assessed against student-data criteria,49,reports,,figure1_rev19_receipt,/numeric_inputs/left/student_data_assessed,47 retained reports plus two additional supplementary reports.
+L18,Scopus and supplementary records,Scope review,Background only,4,reports,L17,figure1_rev19_receipt,/numeric_inputs/left/background_only,Later student-data scope reassessment; separate from the 38 earlier full-text exclusions.
+L19,Scopus and supplementary records,Scope review,Eligible empirical reports,45,reports,L17,figure1_rev19_receipt,/numeric_inputs/left/empirical,Earlier-route contribution to the final review.
+R01,Final Scopus retrieval,Identification,Scopus records,245,record occurrences,,figure1_rev19_receipt,/numeric_inputs/right/records,"Search A + Search B + sensitivity C; overlapping query results, not unique records."
+R02,Final Scopus retrieval,Identification,Search A records,135,record occurrences,R01,figure1_rev19_receipt,/numeric_inputs/right/search_A,Final Search A retrieval.
+R03,Final Scopus retrieval,Identification,Search B records,82,record occurrences,R01,figure1_rev19_receipt,/numeric_inputs/right/search_B,Final Search B retrieval.
+R04,Final Scopus retrieval,Identification,Sensitivity query records,28,record occurrences,R01,figure1_rev19_receipt,/numeric_inputs/right/sensitivity,Final architecture-specific technical-vocabulary retrieval.
+R05,Final Scopus retrieval,Identification,Duplicates within retrieval,31,duplicate record occurrences,R01,figure1_rev19_receipt,/numeric_inputs/right/duplicates,Within-final-retrieval repeated occurrences only.
+R06,Final Scopus retrieval,Reconciliation,Unique records,214,unique records,R01,figure1_rev19_receipt,/numeric_inputs/right/unique,245 occurrences minus 31 within-retrieval repeats.
+R07,Final Scopus retrieval,Reconciliation,Already recorded,152,unique records,R06,figure1_rev19_receipt,/numeric_inputs/right/already_recorded,150 earlier screened keepers plus two previously logged supplementary reports; not 152 newly screened records.
+R08,Final Scopus retrieval,Screening,New records screened,62,unique records,R06,figure1_rev19_receipt,/numeric_inputs/right/new_screened,214 unique final-retrieval records minus 152 already recorded.
+R09,Final Scopus retrieval,Screening,Title/abstract not advanced,34,unique records,R08,figure1_rev19_receipt,/numeric_inputs/right/title_abstract_not_advanced,25 background-only and nine irrelevant records.
+R10,Final Scopus retrieval,Screening disposition,Background only,25,unique records,R09,figure1_rev19_receipt,/numeric_inputs/right/background,Subset of records not advanced to full text.
+R11,Final Scopus retrieval,Screening disposition,Irrelevant,9,unique records,R09,figure1_rev19_receipt,/numeric_inputs/right/irrelevant,Subset of records not advanced to full text.
+R12,Final Scopus retrieval,Retrieval,Reports sought in full text,28,reports,R08,figure1_rev19_receipt,/numeric_inputs/right/sought,62 new records minus 34 not advanced.
+R13,Final Scopus retrieval,Retrieval,Reports not retrieved,2,reports,R12,figure1_rev19_receipt,/numeric_inputs/right/not_retrieved,Two retrieval failures; not counted among assessed-report exclusions.
+R14,Final Scopus retrieval,Eligibility,Reports assessed,26,reports,R12,figure1_rev19_receipt,/numeric_inputs/right/assessed,Retrieved full-text reports.
+R15,Final Scopus retrieval,Eligibility,Full-text exclusions,12,reports,R14,figure1_rev19_receipt,/numeric_inputs/right/fulltext_exclusions,Retrieved reports classified as background rather than eligible empirical reports.
+R16,Final Scopus retrieval,Included,New eligible student-data reports,14,reports,R14,figure1_rev19_receipt,/numeric_inputs/right/new_eligible,Architectural studio/workshop/design-experiment reports; full-text decisions complete.
+F01,Final empirical corpus,Included,Empirical reports included,59,reports,,figure1_rev19_receipt,/numeric_inputs/included,45 earlier empirical reports plus 14 new eligible reports; independent study families are not inferred.

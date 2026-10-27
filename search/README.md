@@ -1,0 +1,15 @@
+# Search queries and selection flow
+
+These tables document the search routes used for the 59-report TSC manuscript. `search_queries.csv` contains six query-event rows: the recorded June A/B searches, the July export retrospectively attributed to A, and the final A/B/C retrieval on 25 October 2026. `selection_flow.csv` reproduces Figure 1 counts.
+
+The query text is copied exactly from the cited saved record or receipt, including line breaks. The earlier Search A retains the literal `ORMidjourney`. Its spacing-normalized final version is separately identified. Publication-year filters cover 2022–2026. Retrieval includes article, review and conference-paper document types; eligibility still required empirical student-derived evidence.
+
+June search dates are recorded as 28 June 2026. The 69-row July export has an import timestamp of 17 July 2026 but no independently preserved query-execution date or log. Its Search A attribution rests on retrospective author confirmation dated 16 October 2026. Accordingly, its `search_date` is blank. Final receipt timestamps record the contemporaneous export receipt, not a newly inferred search-start time. Blank fields mean unavailable or inapplicable, never zero.
+
+The two flow routes must remain distinct. Earlier documented records total 242: 221 Scopus export occurrences plus 21 supplementary records. The 21 are included-subset imports (12 + 9); complete supplementary search yields are unavailable. After 61 duplicates, 181 records were screened, 92 reports sought, 85 assessed and 47 retained. Two previously logged supplementary reports brought scope reassessment to 49; four were background-only, leaving 45 empirical reports.
+
+The final retrieval has 245 occurrences (135 + 82 + 28), 214 unique records and 31 within-retrieval repeats. Of the 214, 152 were already recorded (150 earlier screened records + the two supplementary reports), leaving 62 new records to screen. Of these, 34 were not advanced (25 background + 9 irrelevant); 28 reports were sought, two not retrieved, 26 assessed and 14 included. Thus the final corpus is **45 + 14 = 59 reports**. Counts refer to bibliographic records/report publications, not independently established study families. `reference_population_id` links a count to its relevant population; no percentages are supplied or implied for overlapping query yields.
+
+Do not sum the two identification routes into a complete combined search yield, or label all 245 final-retrieval occurrences as screened records. No separate title/abstract-screening or sought stage is inferred for the two supplementary reports. Earlier same-day broad U1/U2/U3 exploratory retrievals were separately logged as unscreened and are not part of this final selection flow; they are not added to these counts.
+
+Validation checks exact query round-tripping, 15 count reconciliations, agreement between the rev18 and rev19 Figure 1 numeric inputs, and final raw-export row counts/hashes. Raw Scopus exports, abstracts, full texts, authenticated search links, local user paths and credentials are excluded. Source decisions and manuscript files were not changed.

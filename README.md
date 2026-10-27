@@ -11,7 +11,7 @@ This package contains the frozen report-level data used in the current manuscrip
 
 ## Start here
 
-`review_data.xlsx` provides six filterable reading sheets: Charting, Strategies, Reports, Strategy evidence, Field definitions, and Strategy definitions. The CSV files retain normalized records and additional source and review information. The workbook is a frozen reading copy, not a live analysis model; edit the CSVs and rerun the script if conducting a new analysis.
+`review_data.xlsx` provides six filterable reading sheets: Charting, Strategies, Reports, Strategy evidence, Field definitions, and Strategy definitions. The CSV files retain normalized records and additional source information. The workbook is a frozen reading copy, not a live analysis model; edit the CSVs and rerun the script if conducting a new analysis.
 
 CSV files use UTF-8 with a byte-order mark for Excel compatibility. Boolean values are `true` or `false`. Empty cells mean an optional value was not recorded, not zero or a negative finding. Multi-valued analytical fields use JSON arrays inside quoted CSV cells. The two wide reading tables use semicolon-separated labels.
 
@@ -25,17 +25,16 @@ CSV files use UTF-8 with a byte-order mark for Excel compatibility. Boolean valu
 | `data/charting_assignments.csv` | One saved report–field–value assignment (1,332) | Substantive categories and original reporting markers |
 | `data/components_wide.csv` | One report (59) | Readable C1–C8 status overview |
 | `data/component_assessments.csv` | One report × component (472) | Use, linked outcomes, evidence types, rationale, limitations and locations |
-| `data/review_provenance.csv` | One original assessment proposal (1,805) | Earlier approval, current decisions and origin metadata |
 | `data/source_locations.csv` | One recorded evidence pointer (3,167) | Source IDs and page, line or offset locations |
 | `data/sources.csv` | One preserved PDF or text source (164) | Source types and hashes; multiple versions may belong to one report |
 | `data/claim_evidence_metadata.csv` | One claimed-benefit or claimed-risk assignment | Epistemic classification where recorded, with specific audit qualifications |
 | `data/report_analysis_membership.csv` | One report (59) | Eligibility for complete-field benefit/risk comparisons |
-| `schema/` | Field, component, category or column definition | Terminology, joins and input hashes |
+| `schema/` | Field, component, category or column definition | Terminology and joins |
 | `search/` | Search event or selection-flow item | Exact saved queries, search provenance and Figure 1 counts |
 | `analysis/` | Descriptive comparison | Frozen benefit-risk, risk-component and selected triple tables |
 | `analysis/reproduced/` | Summary generated from the public CSVs | Coverage, categories, C1–C8, evidence types, pairs, activities and years |
 
-Join report-level tables on `report_id`. Join assessment details to evidence pointers and approval metadata on `proposal_id`. Join a pointer to its preserved-source metadata on `source_id` or `pdf_source_id`. Source files are not included; page locators and public bibliography links allow readers with access to consult the publications. A pointer can be repeated across assignments, so pointers are not independent observations.
+Join report-level tables on `report_id`. Join assessment details to evidence pointers on `proposal_id`. This is a stable analytical-record ID. Join a pointer to its preserved-source metadata on `source_id` or `pdf_source_id`. Source files are not included; page locators and public bibliography links allow readers with access to consult the publications. A pointer can be repeated across assignments, so pointers are not independent observations.
 
 ## Charting and terminology
 
@@ -68,11 +67,9 @@ The retained benefit-risk and risk-component comparisons use **54 reports** with
 
 Premature-finalization classifications concern source-stated risks and interpretations. The four-report risk set includes a less-direct warning in P070, identified in its audit metadata. It must not be represented as four observed premature-finalization episodes. Benefits, risks and component presence in the same report do not establish a causal sequence. The selected triples were specified within a retrospective exploratory analysis; the filename does not imply preregistration. No inferential tests are included in this package.
 
-## Review provenance and limitations
+## Analytical limits and transparency
 
-The exported classifications include AI-origin analytical proposals and earlier author bulk acceptance. The current decision snapshot contains 20 accepted charting proposals; this is a distinct record from prior approvals and does not imply individual rereading of all 1,805 proposals. Of the 472 component records, 360 retain earlier bulk-acceptance metadata and 112 do not contain that prior-approval metadata. The absence of a current decision does not erase an earlier acceptance. Original proposal status, prior approval and current decision are therefore separate columns.
-
-Text-match verification means a saved passage was matched to a source; it does not establish semantic support or independent human confirmation. Blank attestation fields mean no explicit attestation was stored. The export preserves these boundaries rather than upgrading the evidence status.
+AI tools supported source retrieval, charting, analysis and manuscript preparation under author oversight. Source-derived classifications remain analytical judgments. Reproduction checks establish numerical consistency of the export, not independent validation of those judgments. The source-location table supplies page, line and offset pointers; it does not reproduce the original texts or establish semantic support by itself. Internal author-decision logs and review-process metadata are not part of this public research dataset.
 
 Bibliographic presentation follows the current manuscript. No new complete DOI audit was performed for this export. For P051, an older stored DOI conflicts with the current hosted-preprint reference. Its DOI is left blank, its current public link is retained, and the issue is recorded in `metadata_note`.
 
@@ -86,7 +83,7 @@ python scripts/reproduce_tables.py
 
 No additional packages or source PDFs are needed. The script reconstructs the descriptive tables from the public CSVs and checks all 405 retained benefit-risk and risk-component matrix cells. It writes `analysis/reproduced/validation.json`. It does not modify the primary data, run statistical inference, or reclassify any source.
 
-`manifest_sha256.csv` identifies the files in this release. `schema/input_hashes.csv` records the frozen internal export inputs by filename and hash, without distributing those private working files. Search input hashes are documented separately in `search/`.
+`manifest_sha256.csv` identifies the files in this release. Search dates, exact queries and selection counts are documented separately in `search/`.
 
 ## Access, citation and rights
 

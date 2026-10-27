@@ -1,0 +1,9 @@
+﻿source_field_id,manuscript_field_code,field_key,field_name,definition,previous_display_code
+CH002,CH1,ai_type_tool,AI tool,"Named AI system/tool used or discussed, separate from input–output modality.",CH1
+CH003,CH2,design_stage,Design stage,"Stage/activity of AI use: early ideas, prompting, critique or presentation.",CH2
+CH004,CH3,output_type,Output type,"Produced text, images, diagrams, models or process records.",CH3
+CH005,CH4,pedagogical_role,Claimed benefit,"AI-attributed benefit/teaching function: exploration, critique, feedback or communication.",CH4
+CH006,CH5,claimed_risk,Claimed risk,"Reported/anticipated concerns: learning, judgment, authorship, access or design quality.",CH5
+CH007,CH6,student_role,Student role,"Student generation, selection, interpretation, questioning or revision of AI contributions.",CH6
+CH008,CH7,instructor_role,Instructor role,"Teacher guidance, critique, support or assessment of AI-supported design work.",CH7
+CH013,CH8,ai_type,AI modality,"Input–output form: text-to-image, image-to-image or text-to-text.",CH9

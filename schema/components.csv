@@ -1,0 +1,9 @@
+﻿component_id,component_name,qualifying_activity
+C1,Record design intent,"Record students' own design goals/spatial priorities outside AI exchanges before generation, or revise independently before regenerating; prompts alone do not qualify."
+C2,Document and reflect on design decisions,"Use alternative, problem, revision or decision records for process reflection/review; research-only records do not qualify."
+C3,Direct AI generation,"Direct generation through students' own representations, constraints, local edits, training material or workflow controls."
+C4,Adjust AI use and output detail,"Deliberately adjust output detail and extent of AI use through abstract representations, bounded use, independent work or reasoned convergence. No named stage is required; early design alone does not qualify."
+C5,Compare and question AI outputs,"Apply criteria to compare, reject, reinterpret or challenge AI outputs/suggestions."
+C6,Test architectural proposals,"Check proposals through drawings, models, materials, site/user knowledge or independent sources; presentation-only models do not qualify."
+C7,Critique and assess the design process,"Instructor/peer critique examines student reasoning, decisions or design processes."
+C8,Examine AI limitations,"Explicitly examine model limits, bias or uncertainty and implications for design judgment, beyond software instruction."

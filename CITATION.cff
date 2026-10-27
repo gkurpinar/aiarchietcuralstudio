@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "Please cite this research dataset using its author, title and version."
+type: dataset
+title: "Design judgment in GenAI architectural studios: research data"
+authors:
+  - family-names: "Kurpınar"
+    given-names: "Gönenç"
+    affiliation: "Department of Architecture, İzmir Institute of Technology, Türkiye"
+version: "1.0"
+date-released: "2026-10-27"
+abstract: "Report-level charting, component assessments and source-location metadata for a critical scoping review of anticipatory visualization and premature finalization in GenAI architectural studio and workshop learning. The frozen analytical corpus contains 59 reports."
+keywords:
+  - architectural design education
+  - generative artificial intelligence
+  - design intent
+  - agency
+  - scoping review
+url: "https://github.com/gkurpinar/aiarchietcuralstudio"

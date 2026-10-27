@@ -1,0 +1,197 @@
+search_event_id,flow_route,database,query_name,search_date,date_basis,receipt_recorded_at_utc,import_timestamp_as_recorded,query_attribution,result_record_occurrences,query_text,query_text_sha256_utf8,query_source_id,query_source_sha256,export_sha256,notes
+earlier_A_June,Scopus and supplementary records,Scopus,Search A,2026-06-28,Search date preserved in the historical query record.,,2026-06-28T13:07:15,Preserved historical query record.,91,"TITLE-ABS-KEY(
+  ""generative artificial intelligence"" OR  ""generative AI"" OR  GenAI OR ""text-to-image"" OR  ""text to image"" OR ""image generation"" OR""AI image generation"" OR""AI-generated image*"" OR ""AI generated image*"" ORMidjourney OR""DALL-E"" OR ""DALL·E"" OR  ""Stable Diffusion"" OR
+  ChatGPT OR
+  ""large language model*"" OR
+  LLM OR
+  ""prompt engineering"" OR
+  ""prompt-based"" OR
+  prompting OR
+  ""Google Gemini"" OR
+  ""Gemini AI"" OR
+  ""Google Bard"" OR
+  ""Anthropic Claude"" OR
+  ""Claude AI""
+)
+AND
+(
+  TITLE-ABS-KEY(
+    ""architectural education"" OR
+    ""architecture education"" OR
+    ""architectural design education"" OR
+    ""architectural design studio"" OR
+    ""architecture design studio"" OR
+    ""architectural studio""
+  )
+  OR
+  (
+    TITLE-ABS-KEY(
+      ""design studio"" OR
+      ""studio pedagogy"" OR
+      ""design education"" OR
+      ""design learning""
+    )
+    AND
+    TITLE-ABS-KEY(
+      ""architectural design"" OR
+      ""interior architecture"" OR
+      ""built environment"" OR
+      ""spatial design"" OR
+      ""urban design""
+    )
+  )
+)
+AND
+PUBYEAR > 2021
+AND
+PUBYEAR < 2027
+AND
+(DOCTYPE(ar) OR DOCTYPE(re) OR DOCTYPE(cp))
+AND
+LANGUAGE(english)",17206bb6039179b6eb99ffaeb83814a536b69c83309f17a690c9251b89a5694e,historical_queries,6f1850d90395a22b149d98087af38122baa1cd0ccb4a943924e6e47c36384f17,093c66dd0c1607bb8fb3f26d1509c3025e27f2d8c172e033b7888fb149d1038d,The literal ORMidjourney is retained; no correction is presented as historical execution.
+earlier_B_June,Scopus and supplementary records,Scopus,Search B,2026-06-28,Search date preserved in the historical query record.,,2026-06-28T13:07:28,Preserved historical query record.,61,"TITLE-ABS-KEY(
+  ""text-to-image"" OR
+  ""text to image"" OR
+  ""image-to-image"" OR
+  ""image to image"" OR
+  ""AI-generated image*"" OR
+  ""AI generated image*"" OR
+  ""AI image generation"" OR
+  ""image generation"" OR
+  Midjourney OR
+  ""DALL-E"" OR
+  ""DALL·E"" OR
+  ""Stable Diffusion"" OR
+  ChatGPT OR
+  ""Claude AI"" OR
+  ""Anthropic Claude"" OR
+  ""Google Gemini"" OR
+  ""Gemini AI""
+)
+AND
+TITLE-ABS-KEY(
+  ""architectural design"" OR
+  ""architectural concept*"" OR
+  ""conceptual architecture"" OR
+  ""architectural conceptual design"" OR
+  ""architectural design studio"" OR
+  ""interior architecture"" OR
+  ""spatial design""
+)
+AND
+TITLE-ABS-KEY(
+  ""conceptual design"" OR
+  ideation OR
+  ""design ideation"" OR
+  ""early design"" OR
+  ""design exploration"" OR
+  ""visual representation"" OR
+  ""design representation""
+)
+AND
+PUBYEAR > 2021
+AND
+PUBYEAR < 2027
+AND
+(DOCTYPE(ar) OR DOCTYPE(re) OR DOCTYPE(cp))
+AND
+LANGUAGE(english)",ebd0668e69f37bc2d019b0181844c125b224eabc3f35e0e22d967f36234d1679,historical_queries,6f1850d90395a22b149d98087af38122baa1cd0ccb4a943924e6e47c36384f17,61007a14b38daff544af3625232b58548f68d83b754c5c2d4892253c3ad22526,Verbatim historical Search B wording.
+earlier_A_July_attributed,Scopus and supplementary records,Scopus,Search A,,No search date independently preserved; import date is not an execution date.,,2026-07-17T14:46:26,Retrospective author attestation on 2026-10-16; no independent July execution log or exact timestamp.,69,"TITLE-ABS-KEY(
+  ""generative artificial intelligence"" OR  ""generative AI"" OR  GenAI OR ""text-to-image"" OR  ""text to image"" OR ""image generation"" OR""AI image generation"" OR""AI-generated image*"" OR ""AI generated image*"" ORMidjourney OR""DALL-E"" OR ""DALL·E"" OR  ""Stable Diffusion"" OR
+  ChatGPT OR
+  ""large language model*"" OR
+  LLM OR
+  ""prompt engineering"" OR
+  ""prompt-based"" OR
+  prompting OR
+  ""Google Gemini"" OR
+  ""Gemini AI"" OR
+  ""Google Bard"" OR
+  ""Anthropic Claude"" OR
+  ""Claude AI""
+)
+AND
+(
+  TITLE-ABS-KEY(
+    ""architectural education"" OR
+    ""architecture education"" OR
+    ""architectural design education"" OR
+    ""architectural design studio"" OR
+    ""architecture design studio"" OR
+    ""architectural studio""
+  )
+  OR
+  (
+    TITLE-ABS-KEY(
+      ""design studio"" OR
+      ""studio pedagogy"" OR
+      ""design education"" OR
+      ""design learning""
+    )
+    AND
+    TITLE-ABS-KEY(
+      ""architectural design"" OR
+      ""interior architecture"" OR
+      ""built environment"" OR
+      ""spatial design"" OR
+      ""urban design""
+    )
+  )
+)
+AND
+PUBYEAR > 2021
+AND
+PUBYEAR < 2027
+AND
+(DOCTYPE(ar) OR DOCTYPE(re) OR DOCTYPE(cp))
+AND
+LANGUAGE(english)",17206bb6039179b6eb99ffaeb83814a536b69c83309f17a690c9251b89a5694e,author_attestation,901fcfeb74a6b55f5ac8d6985d393b06bae29ddda6884999f7c607e803bc58ed,cb81349f6bb089775781dad638a8ff6d300572a63c348c92c71dccec9d1facdd,The literal ORMidjourney is retained; no correction is presented as historical execution.
+final_A_20261025,Final Scopus retrieval,Scopus,Search A,2026-10-25,Dated final retrieval/export receipt; timestamp below records receipt creation.,2026-10-25T19:44:14.675Z,,Contemporaneous final retrieval receipt.,135,"TITLE-ABS-KEY(""generative artificial intelligence"" OR ""generative AI"" OR GenAI OR ""text-to-image"" OR ""text to image"" OR ""image generation"" OR ""AI image generation"" OR ""AI-generated image*"" OR ""AI generated image*"" OR Midjourney OR ""DALL-E"" OR ""DALL·E"" OR ""Stable Diffusion"" OR ChatGPT OR ""large language model*"" OR LLM OR ""prompt engineering"" OR ""prompt-based"" OR prompting OR ""Google Gemini"" OR ""Gemini AI"" OR ""Google Bard"" OR ""Anthropic Claude"" OR ""Claude AI"") AND (TITLE-ABS-KEY(""architectural education"" OR ""architecture education"" OR ""architectural design education"" OR ""architectural design studio"" OR ""architecture design studio"" OR ""architectural studio"") OR (TITLE-ABS-KEY(""design studio"" OR ""studio pedagogy"" OR ""design education"" OR ""design learning"") AND TITLE-ABS-KEY(""architectural design"" OR ""interior architecture"" OR ""built environment"" OR ""spatial design"" OR ""urban design""))) AND PUBYEAR > 2021 AND PUBYEAR < 2027 AND (DOCTYPE(ar) OR DOCTYPE(re) OR DOCTYPE(cp)) AND LANGUAGE(english)",4dce725f239d7a8cd1a62ea1b5096a4fd9ca07afad9f0434db8d5ec4150128e0,final_A_receipt,c716e54d530d74a9039706c7871959e143d5513e498ddca57f24a0d7c750b809,88593964ccce1c60f53ec9b9b6e1e89b7b125ac06d717cc99c8a846a9936bfe8,"Whitespace-normalized Search A, including OR Midjourney; this is not presented as exact historical executable equivalence."
+final_B_20261025,Final Scopus retrieval,Scopus,Search B,2026-10-25,Dated final retrieval/export receipt; timestamp below records receipt creation.,2026-10-25T19:45:45.392Z,,Contemporaneous final retrieval receipt.,82,"TITLE-ABS-KEY(
+  ""text-to-image"" OR
+  ""text to image"" OR
+  ""image-to-image"" OR
+  ""image to image"" OR
+  ""AI-generated image*"" OR
+  ""AI generated image*"" OR
+  ""AI image generation"" OR
+  ""image generation"" OR
+  Midjourney OR
+  ""DALL-E"" OR
+  ""DALL·E"" OR
+  ""Stable Diffusion"" OR
+  ChatGPT OR
+  ""Claude AI"" OR
+  ""Anthropic Claude"" OR
+  ""Google Gemini"" OR
+  ""Gemini AI""
+)
+AND
+TITLE-ABS-KEY(
+  ""architectural design"" OR
+  ""architectural concept*"" OR
+  ""conceptual architecture"" OR
+  ""architectural conceptual design"" OR
+  ""architectural design studio"" OR
+  ""interior architecture"" OR
+  ""spatial design""
+)
+AND
+TITLE-ABS-KEY(
+  ""conceptual design"" OR
+  ideation OR
+  ""design ideation"" OR
+  ""early design"" OR
+  ""design exploration"" OR
+  ""visual representation"" OR
+  ""design representation""
+)
+AND
+PUBYEAR > 2021
+AND
+PUBYEAR < 2027
+AND
+(DOCTYPE(ar) OR DOCTYPE(re) OR DOCTYPE(cp))
+AND
+LANGUAGE(english)",8bc6635d3c34cee39c06f6b2ae2d4cc6381e4436f4a55ee67b26e740851bce09,final_B_receipt,77a8e41c69c9c8e032e9aa21417eff0e1c8c7ab61b13b3a96e78f97797f57975,ee08bd9fe3c288b01c4c66f2d332e71144a557eab1cca6b3c0ace81a2e63d9a6,Historical Search B terms and filters retained.
+final_C_20261025,Final Scopus retrieval,Scopus,Sensitivity query C,2026-10-25,Dated final retrieval/export receipt; timestamp below records receipt creation.,2026-10-25T19:47:02.878Z,,Contemporaneous final retrieval receipt.,28,"TITLE-ABS-KEY(""generative adversarial network*"" OR GAN OR GANs OR ""deep generative model*"" OR ""deep generative design"" OR ""generative deep learning"" OR ""variational autoencoder*"" OR ""diffusion model*"" OR ""image synthesis"") AND TITLE-ABS-KEY(""architectural education"" OR ""architecture education"" OR ""architectural design education"" OR ""architectural design studio"" OR ""architecture design studio"" OR ""architectural studio"" OR ((""architectural design"" OR ""interior architecture"" OR ""spatial design"") AND (student* OR workshop* OR studio* OR pedagog*))) AND PUBYEAR > 2021 AND PUBYEAR < 2027 AND (DOCTYPE(ar) OR DOCTYPE(re) OR DOCTYPE(cp)) AND LANGUAGE(english)",920c96d11cc851ee0b564160385b1ab3f3fdfdd6e402352a47416d34bdd3bc34,final_C_receipt,77b8240845b49e5aa4d8f2ec9c9e9129c8b3b8c99ed3434be7c305dda4f8636f,e4dbfd95fd5f81083fd50eb3f91a19ee0dcd16d57b84b9e9bb361423a3799ec4,Architecture-specific technical-vocabulary sensitivity search; not a historical query.
